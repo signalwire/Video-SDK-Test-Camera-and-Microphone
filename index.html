@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- SignalWire Library -->
+    <script src="https://unpkg.com/@signalwire/js"></script>
+
+    <style>
+      body { margin: auto; max-width: 900px; }
+      label {display: block; margin-right: 10px; }
+      #videoElement { display: block; width: 400px; }
+      #audioMeter { width: 400px; }
+      .selectors { display: flex; margin-bottom: 1em; }
+    </style>
+  </head>
+  <body class="container">
+    <p>Test your camera and microphone.</p>
+
+    <div class="selectors">
+      <div>
+        <label for="cameraSelector">Camera:</label>
+        <select id="cameraSelector"></select>
+      </div>
+      <div>
+        <label for="microphoneSelector">Microphone:</label>
+        <select id="microphoneSelector"></select>
+      </div>
+    </div>
+
+    <div>
+      <label>
+        <input id="loopbackMic" type="checkbox" autocomplete="off">
+        Reproduce audio from microphone (can cause feedback!)
+      </label>
+    </div>
+
+    <!-- Video test canvas -->
+    <video id="videoElement" autoplay="true" muted="true"></video>
+
+    <!-- Audio test meter -->
+    <meter id="audioMeter" min="0" max="1" high="0.9"></meter>
+
+    <!-- Include our script -->
+    <script src="index.js"></script>
+  </body>
+</html>

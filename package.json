@@ -1,0 +1,10 @@
+{
+  "name": "video-sdk-test-devices-page",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "npx http-server -o ."
+  },
+  "author": "SignalWire",
+  "license": "MIT"
+}
